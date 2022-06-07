@@ -16,5 +16,6 @@ namespace Contact_Tracing_Form
         {
             InitializeComponent();
         }
+
     }
 }
