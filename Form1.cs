@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Contact_Tracing_Form
 {
@@ -29,12 +30,6 @@ namespace Contact_Tracing_Form
             Health_Info.Visible = false;
         }
 
-        private void Btn3_P3_Click(object sender, EventArgs e)
-        {
-            P_profile.Visible = false;
-            Health_Info.Visible = true;
-        }
-
         private void P_profile_Paint(object sender, PaintEventArgs e)
         {
             Health_Info.Visible = false;
@@ -44,5 +39,25 @@ namespace Contact_Tracing_Form
         {
             P_profile.Visible = false;
         }
+        // for submit
+        private void Btn3_P3_Click(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C:\Users\Public\Document\test.text", true);
+        
+
+            file.WriteLine("First Name: " + textBox6.Text);
+            file.WriteLine("Last Time:  " + textBox7.Text);
+            file.WriteLine("Age:  " + textBox8.Text);
+            file.WriteLine("Barangay:  " + textBox9.Text);
+            file.WriteLine("Municipality:  " + textBox10.Text);
+            file.WriteLine("Zip Code:  " + textBox11.Text);
+
+            if (radioButton1.Checked)
+            {
+
+            }
+            file.Close();
+        }
+       
     }
 }
