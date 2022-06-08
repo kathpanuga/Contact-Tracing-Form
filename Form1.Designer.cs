@@ -84,6 +84,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Btn3_P2 = new System.Windows.Forms.Button();
             this.P_profile.SuspendLayout();
             this.Health_Info.SuspendLayout();
             this.SuspendLayout();
@@ -234,6 +235,7 @@
             // Health_Info
             // 
             this.Health_Info.BackColor = System.Drawing.Color.PeachPuff;
+            this.Health_Info.Controls.Add(this.Btn3_P2);
             this.Health_Info.Controls.Add(this.textBox12);
             this.Health_Info.Controls.Add(this.label25);
             this.Health_Info.Controls.Add(this.checkBox12);
@@ -596,7 +598,7 @@
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(493, 164);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(68, 24);
+            this.textBox11.Size = new System.Drawing.Size(78, 24);
             this.textBox11.TabIndex = 20;
             // 
             // textBox10
@@ -674,9 +676,9 @@
             // 
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(271, 97);
+            this.textBox7.Location = new System.Drawing.Point(282, 97);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(127, 24);
+            this.textBox7.Size = new System.Drawing.Size(115, 24);
             this.textBox7.TabIndex = 13;
             // 
             // textBox6
@@ -685,7 +687,7 @@
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(134, 97);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(127, 24);
+            this.textBox6.Size = new System.Drawing.Size(142, 24);
             this.textBox6.TabIndex = 12;
             // 
             // label8
@@ -709,6 +711,16 @@
             this.label7.Size = new System.Drawing.Size(258, 28);
             this.label7.TabIndex = 12;
             this.label7.Text = "Health Information";
+            // 
+            // Btn3_P2
+            // 
+            this.Btn3_P2.ForeColor = System.Drawing.Color.Black;
+            this.Btn3_P2.Location = new System.Drawing.Point(323, 568);
+            this.Btn3_P2.Name = "Btn3_P2";
+            this.Btn3_P2.Size = new System.Drawing.Size(91, 23);
+            this.Btn3_P2.TabIndex = 48;
+            this.Btn3_P2.Text = "Previous";
+            this.Btn3_P2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -787,6 +799,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button Btn3_P2;
     }
 }
 
