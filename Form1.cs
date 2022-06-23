@@ -44,17 +44,19 @@ namespace Contact_Tracing_Form
         {
             StreamWriter file = new StreamWriter(@"C:\Users\Public\Document\test.text", true);
 
-            file.WriteLine("Name:  " + textBox1.Text);
-            file.WriteLine("Address:  " + textBox2.Text);
-            file.WriteLine("Contact Number:  " + textBox3.Text);
-            file.WriteLine("Email Address:  " + textBox4.Text);
-            file.WriteLine("Date:  " + textBox5.Text);
-            file.WriteLine("First Name:  " + textBox6.Text);
-            file.WriteLine("Last Time:  " + textBox7.Text);
-            file.WriteLine("Age:  " + textBox8.Text);
-            file.WriteLine("Barangay:  " + textBox9.Text);
-            file.WriteLine("Municipality:  " + textBox10.Text);
-            file.WriteLine("Zip Code:  " + textBox11.Text);
+            file.WriteLine("First Name:  " + Panel1Txtb1.Text);
+            file.WriteLine("Middle Name:  " + Panel1Txtb2.Text);
+            file.WriteLine("Last Name:  " + Panel1Txtb3.Text);
+            file.WriteLine("Address:  " + Panel1Txtb4.Text);
+            file.WriteLine("Email:  " + Panel1Txtb5.Text);
+            file.WriteLine("Mobile Number:  " + Panel1Txtb6);
+            file.WriteLine("Temperature:  " + Panel2Txtb1);
+            file.WriteLine("First Name:  " + Panel2Txtb2.Text);
+            file.WriteLine("Last Time:  " + Panel2Txtb3.Text);
+            file.WriteLine("Age:  " + Panel2Txtb4.Text);
+            file.WriteLine("Barangay:  " + Panel2Txtb5.Text);
+            file.WriteLine("Municipality:  " + Panel2Txtb6.Text);
+            file.WriteLine("Zip Code:  " + Panel2Txtb7.Text);
 
             if (radioButton1.Checked)
             {
@@ -110,6 +112,7 @@ namespace Contact_Tracing_Form
             file.Close();
             MessageBox.Show("Thank you for submitting!");
         }
+
 
     }
 }
