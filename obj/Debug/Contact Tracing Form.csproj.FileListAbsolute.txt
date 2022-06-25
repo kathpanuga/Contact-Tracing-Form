@@ -20,3 +20,7 @@ C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact Tracing Form.csproj.CoreCompileInputs.cache
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact Tracing Form.exe
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact Tracing Form.pdb
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.UserControl1.resources
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Data_Record.resources
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.DataRecord.resources
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Data_Recordcs.resources
