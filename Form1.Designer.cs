@@ -42,7 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.Date1 = new System.Windows.Forms.DateTimePicker();
             this.Btn1_P1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -50,11 +50,9 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Information = new System.Windows.Forms.ListBox();
             this.Health_Info = new System.Windows.Forms.Panel();
-            this.DateRecord = new System.Windows.Forms.DateTimePicker();
-            this.DateRecordBtn = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Record = new System.Windows.Forms.Button();
             this.Records = new System.Windows.Forms.ListBox();
+            this.ViewRecords = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.ResetBtn = new System.Windows.Forms.Button();
@@ -103,6 +101,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.searchBTN = new System.Windows.Forms.Button();
+            this.searchBar = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.P_profile.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Health_Info.SuspendLayout();
@@ -125,7 +126,7 @@
             this.P_profile.Controls.Add(this.label6);
             this.P_profile.Controls.Add(this.label17);
             this.P_profile.Controls.Add(this.label18);
-            this.P_profile.Controls.Add(this.dateTimePicker2);
+            this.P_profile.Controls.Add(this.Date1);
             this.P_profile.Controls.Add(this.Btn1_P1);
             this.P_profile.Controls.Add(this.label1);
             this.P_profile.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -256,12 +257,13 @@
             this.label18.TabIndex = 53;
             this.label18.Text = "First Name";
             // 
-            // dateTimePicker2
+            // Date1
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(307, 107);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 52;
+            this.Date1.Location = new System.Drawing.Point(307, 107);
+            this.Date1.Name = "Date1";
+            this.Date1.Size = new System.Drawing.Size(200, 22);
+            this.Date1.TabIndex = 52;
+            this.Date1.Value = new System.DateTime(2022, 6, 25, 0, 0, 0, 0);
             // 
             // Btn1_P1
             // 
@@ -324,11 +326,12 @@
             // Health_Info
             // 
             this.Health_Info.BackColor = System.Drawing.Color.Snow;
-            this.Health_Info.Controls.Add(this.DateRecord);
-            this.Health_Info.Controls.Add(this.DateRecordBtn);
-            this.Health_Info.Controls.Add(this.label21);
-            this.Health_Info.Controls.Add(this.Record);
+            this.Health_Info.Controls.Add(this.button2);
+            this.Health_Info.Controls.Add(this.searchBar);
+            this.Health_Info.Controls.Add(this.searchBTN);
             this.Health_Info.Controls.Add(this.Records);
+            this.Health_Info.Controls.Add(this.ViewRecords);
+            this.Health_Info.Controls.Add(this.label21);
             this.Health_Info.Controls.Add(this.label20);
             this.Health_Info.Controls.Add(this.label19);
             this.Health_Info.Controls.Add(this.ResetBtn);
@@ -380,23 +383,25 @@
             this.Health_Info.TabIndex = 12;
             this.Health_Info.Paint += new System.Windows.Forms.PaintEventHandler(this.Health_Info_Paint);
             // 
-            // DateRecord
+            // Records
             // 
-            this.DateRecord.Location = new System.Drawing.Point(637, 457);
-            this.DateRecord.Name = "DateRecord";
-            this.DateRecord.Size = new System.Drawing.Size(227, 22);
-            this.DateRecord.TabIndex = 60;
+            this.Records.FormattingEnabled = true;
+            this.Records.ItemHeight = 16;
+            this.Records.Location = new System.Drawing.Point(600, 69);
+            this.Records.Name = "Records";
+            this.Records.Size = new System.Drawing.Size(285, 388);
+            this.Records.TabIndex = 61;
             // 
-            // DateRecordBtn
+            // ViewRecords
             // 
-            this.DateRecordBtn.ForeColor = System.Drawing.Color.Black;
-            this.DateRecordBtn.Location = new System.Drawing.Point(600, 485);
-            this.DateRecordBtn.Name = "DateRecordBtn";
-            this.DateRecordBtn.Size = new System.Drawing.Size(100, 23);
-            this.DateRecordBtn.TabIndex = 59;
-            this.DateRecordBtn.Text = "Date Record";
-            this.DateRecordBtn.UseVisualStyleBackColor = true;
-            this.DateRecordBtn.Click += new System.EventHandler(this.DateRcrd);
+            this.ViewRecords.ForeColor = System.Drawing.Color.Black;
+            this.ViewRecords.Location = new System.Drawing.Point(600, 472);
+            this.ViewRecords.Name = "ViewRecords";
+            this.ViewRecords.Size = new System.Drawing.Size(102, 23);
+            this.ViewRecords.TabIndex = 60;
+            this.ViewRecords.Text = "View Records";
+            this.ViewRecords.UseVisualStyleBackColor = true;
+            this.ViewRecords.Click += new System.EventHandler(this.ViewRecords_Click);
             // 
             // label21
             // 
@@ -408,26 +413,6 @@
             this.label21.Size = new System.Drawing.Size(63, 17);
             this.label21.TabIndex = 58;
             this.label21.Text = "Records";
-            // 
-            // Record
-            // 
-            this.Record.ForeColor = System.Drawing.Color.Black;
-            this.Record.Location = new System.Drawing.Point(809, 485);
-            this.Record.Name = "Record";
-            this.Record.Size = new System.Drawing.Size(94, 23);
-            this.Record.TabIndex = 57;
-            this.Record.Text = "View Record";
-            this.Record.UseVisualStyleBackColor = true;
-            this.Record.Click += new System.EventHandler(this.Record_Click);
-            // 
-            // Records
-            // 
-            this.Records.FormattingEnabled = true;
-            this.Records.ItemHeight = 16;
-            this.Records.Location = new System.Drawing.Point(600, 58);
-            this.Records.Name = "Records";
-            this.Records.Size = new System.Drawing.Size(303, 388);
-            this.Records.TabIndex = 56;
             // 
             // label20
             // 
@@ -922,6 +907,35 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // searchBTN
+            // 
+            this.searchBTN.ForeColor = System.Drawing.Color.Black;
+            this.searchBTN.Location = new System.Drawing.Point(802, 27);
+            this.searchBTN.Name = "searchBTN";
+            this.searchBTN.Size = new System.Drawing.Size(83, 23);
+            this.searchBTN.TabIndex = 66;
+            this.searchBTN.Text = "search";
+            this.searchBTN.UseVisualStyleBackColor = true;
+            this.searchBTN.Click += new System.EventHandler(this.searchBTN_Click);
+            // 
+            // searchBar
+            // 
+            this.searchBar.Location = new System.Drawing.Point(691, 25);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(100, 22);
+            this.searchBar.TabIndex = 67;
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(810, 472);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 68;
+            this.button2.Text = "Remove";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1012,15 +1026,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker Date1;
         private System.Windows.Forms.Button Btn1_P1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button Record;
-        private System.Windows.Forms.ListBox Records;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DateTimePicker DateRecord;
-        private System.Windows.Forms.Button DateRecordBtn;
+        private System.Windows.Forms.Button ViewRecords;
+        private System.Windows.Forms.ListBox Records;
+        private System.Windows.Forms.Button searchBTN;
+        private System.Windows.Forms.TextBox searchBar;
+        private System.Windows.Forms.Button button2;
     }
 }
 

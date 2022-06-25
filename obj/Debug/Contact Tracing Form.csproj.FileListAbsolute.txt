@@ -24,3 +24,4 @@ C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Data_Record.resources
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.DataRecord.resources
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Data_Recordcs.resources
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Form2.resources

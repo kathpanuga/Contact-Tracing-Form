@@ -47,7 +47,7 @@ namespace Contact_Tracing_Form
         {
             StreamWriter file = new StreamWriter(@"C:\Users\Public\Document\test.text", true);
 
-            file.WriteLine("Date:  " + dateTimePicker2.Value);
+            file.WriteLine("Date: " + Date1.Value);
             file.WriteLine("First Name:  " + Panel1Txtb1.Text);
             file.WriteLine("Middle Name:  " + Panel1Txtb2.Text);
             file.WriteLine("Last Name:  " + Panel1Txtb3.Text);
@@ -179,30 +179,116 @@ namespace Contact_Tracing_Form
             Health_Info.Visible = false;
         }
 
-        private void Record_Click(object sender, EventArgs e)
+        private void ViewRecords_Click(object sender, EventArgs e)
         {
             string ViewRecords = @"C:\Users\Public\Document\test.text";
             List<string> ViewRecordsList = new List<string>();
-            ViewRecordsList = File.ReadLines(ViewRecords).ToList();
+            ViewRecordsList = File.ReadAllLines(ViewRecords).ToList();
 
-            foreach (string ViewRecord in ViewRecordsList)
+            foreach (string line in ViewRecordsList)
             {
-                Records.Items.Add(ViewRecord);
+                Records.Items.Add(line);
+                {
+                    File.WriteAllLines(ViewRecords, ViewRecordsList.ToArray());
+                }
             }
-            File.WriteAllLines(ViewRecords, ViewRecordsList.ToArray());
         }
 
-        private void DateRcrd(object sender, EventArgs e)
+        class data
         {
-            string ViewDateRecords = DateRecord.ToString();
-            List<string> ViewDateRecordsList = new List<string>();
-            ViewDateRecordsList = File.ReadLines(ViewDateRecords).ToList();
+            public string date { get; set; }
+            public string fn { get; set; }
+            public string mn { get; set; }
+            public string ln { get; set; }
+            public string add { get; set; }
+            public string email { get; set; }
+            public string num { get; set; }
+            public string temp { get; set; }
+            public string fn2 { get; set; }
+            public string ln2 { get; set; }
+            public string age { get; set; }
+            public string brgy { get; set; }
+            public string mun { get; set; }
+            public string zip { get; set; }
+            public string vac { get; set; }
+            public string Q1 { get; set; }
+            public string Q2 { get; set; }
+            public string Q3 { get; set; }
+            public string Q4 { get; set; }
+            public string Q5 { get; set; }
+        }
+        List<data> searchRecordsList = new List<data>();
 
-            foreach(string ViewDateRecord in ViewDateRecordsList)
+        
+        private void searchBTN_Click(object sender, EventArgs e)
+        {
+            Records.Text = "";
+            string ViewRecord = @"C:\Users\Public\Document\test.text";
+            StreamReader reader = File.OpenText(ViewRecord);
+
+            int counter = 0;
+            while (!(reader.EndOfStream))
             {
-                Records.Items.Add(ViewDateRecord);
+                searchRecordsList.Add(new data
+                {
+                    date = reader.ReadLine(),
+                    fn = reader.ReadLine(),
+                    mn = reader.ReadLine(),
+                    ln = reader.ReadLine(),
+                    add = reader.ReadLine(),
+                    email = reader.ReadLine(),
+                    num = reader.ReadLine(),
+                    temp = reader.ReadLine(),
+                    fn2 = reader.ReadLine(),
+                    ln2 = reader.ReadLine(),
+                    age = reader.ReadLine(),
+                    brgy = reader.ReadLine(),
+                    mun = reader.ReadLine(),
+                    zip = reader.ReadLine(),
+                    vac = reader.ReadLine(),
+                    Q1 = reader.ReadLine(),
+                    Q2 = reader.ReadLine(),
+                    Q3 = reader.ReadLine(),
+                    Q4 = reader.ReadLine(),
+                    Q5 = reader.ReadLine(),
+
+                });
+
+                counter = counter + 1;
             }
-            File.WriteAllLines(ViewDateRecords, ViewDateRecordsList.ToArray());
+            string dateCompare = "Date: " + searchBar.Text;
+
+            for (int find = 0; find < counter; find++)
+            {
+                if (dateCompare == searchRecordsList[find].date.ToString())
+                {
+                    Records.Items.Add(searchRecordsList[find].date.ToString());
+                    Records.Items.Add(searchRecordsList[find].fn.ToString());
+                    Records.Items.Add(searchRecordsList[find].mn.ToString());
+                    Records.Items.Add(searchRecordsList[find].ln.ToString());
+                    Records.Items.Add(searchRecordsList[find].add.ToString());
+                    Records.Items.Add(searchRecordsList[find].email.ToString());
+                    Records.Items.Add(searchRecordsList[find].num.ToString());
+                    Records.Items.Add(searchRecordsList[find].temp.ToString());
+                    Records.Items.Add(searchRecordsList[find].fn2.ToString());
+                    Records.Items.Add(searchRecordsList[find].ln2.ToString());
+                    Records.Items.Add(searchRecordsList[find].age.ToString());
+                    Records.Items.Add(searchRecordsList[find].brgy.ToString());
+                    Records.Items.Add(searchRecordsList[find].mun.ToString());
+                    Records.Items.Add(searchRecordsList[find].zip.ToString());
+                    Records.Items.Add(searchRecordsList[find].vac.ToString());
+                    Records.Items.Add(searchRecordsList[find].Q1.ToString());
+                    Records.Items.Add(searchRecordsList[find].Q2.ToString());
+                    Records.Items.Add(searchRecordsList[find].Q3.ToString());
+                    Records.Items.Add(searchRecordsList[find].Q4.ToString());
+                    Records.Items.Add(searchRecordsList[find].Q5.ToString());
+                }
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Records.Items.Clear();
         }
     }
 }
