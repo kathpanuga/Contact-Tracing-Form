@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MessagingToolkit.QRCode.Codec;
+using MessagingToolkit.QRCode.Codec.Data;
+
 
 namespace Contact_Tracing_Form
 {
@@ -120,6 +123,9 @@ namespace Contact_Tracing_Form
 
             file.Close();
             MessageBox.Show("Thank you for submitting!");
+
+            Form2 form = new Form2();
+            form.ShowDialog();
 
         }
 
@@ -290,5 +296,7 @@ namespace Contact_Tracing_Form
         {
             Records.Items.Clear();
         }
+
+        
     }
 }

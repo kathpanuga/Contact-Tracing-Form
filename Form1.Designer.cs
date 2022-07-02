@@ -50,6 +50,9 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Information = new System.Windows.Forms.ListBox();
             this.Health_Info = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.searchBar = new System.Windows.Forms.TextBox();
+            this.searchBTN = new System.Windows.Forms.Button();
             this.Records = new System.Windows.Forms.ListBox();
             this.ViewRecords = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
@@ -101,9 +104,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.searchBTN = new System.Windows.Forms.Button();
-            this.searchBar = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.P_profile.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Health_Info.SuspendLayout();
@@ -132,7 +132,7 @@
             this.P_profile.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.P_profile.Location = new System.Drawing.Point(264, 42);
             this.P_profile.Name = "P_profile";
-            this.P_profile.Size = new System.Drawing.Size(555, 523);
+            this.P_profile.Size = new System.Drawing.Size(555, 520);
             this.P_profile.TabIndex = 0;
             this.P_profile.Paint += new System.Windows.Forms.PaintEventHandler(this.P_profile_Paint);
             // 
@@ -150,6 +150,17 @@
             // 
             // Panel1Txtb6
             // 
+            this.Panel1Txtb6.AutoCompleteCustomSource.AddRange(new string[] {
+            "09116428394",
+            "09115624332",
+            "09357638995",
+            "09652243213",
+            "09468811256",
+            "0946853212",
+            "09422165335",
+            ""});
+            this.Panel1Txtb6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel1Txtb6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel1Txtb6.Location = new System.Drawing.Point(121, 416);
             this.Panel1Txtb6.Name = "Panel1Txtb6";
             this.Panel1Txtb6.Size = new System.Drawing.Size(317, 22);
@@ -157,6 +168,21 @@
             // 
             // Panel1Txtb5
             // 
+            this.Panel1Txtb5.AutoCompleteCustomSource.AddRange(new string[] {
+            "kathlinnaaaa@gmail.com",
+            "erosamarvin@gmail.com",
+            "jcdeguzman8@gmail.com",
+            "palmesroderick14@gmail.com",
+            "gordoraxyra@gmail.com",
+            "reylesuriel@gmail.com",
+            "djsales@gmail.com",
+            "jordanrhayan20@gmail.com",
+            "artemis_7@gmail.com",
+            "alliana_78@gmail.com",
+            "robertdiscayapanuga@gmail.com",
+            "lykamaepanuga_54@gmail.com"});
+            this.Panel1Txtb5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel1Txtb5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel1Txtb5.Location = new System.Drawing.Point(121, 371);
             this.Panel1Txtb5.Name = "Panel1Txtb5";
             this.Panel1Txtb5.Size = new System.Drawing.Size(317, 22);
@@ -164,6 +190,15 @@
             // 
             // Panel1Txtb4
             // 
+            this.Panel1Txtb4.AutoCompleteCustomSource.AddRange(new string[] {
+            "Bagong Silang, Sucat, Muntinlupa City",
+            "Caloocan City",
+            "Sta. Rosa, Laguna",
+            "Calamba Laguna",
+            "San Ildefonso",
+            "Quezon City"});
+            this.Panel1Txtb4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel1Txtb4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel1Txtb4.Location = new System.Drawing.Point(121, 326);
             this.Panel1Txtb4.Name = "Panel1Txtb4";
             this.Panel1Txtb4.Size = new System.Drawing.Size(317, 22);
@@ -171,6 +206,17 @@
             // 
             // Panel1Txtb3
             // 
+            this.Panel1Txtb3.AutoCompleteCustomSource.AddRange(new string[] {
+            "Panuga",
+            "Palmes",
+            "Gordora",
+            "De Guzman",
+            "Jordan",
+            "Marasigan",
+            "Reyles",
+            "Alvarez"});
+            this.Panel1Txtb3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel1Txtb3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel1Txtb3.Location = new System.Drawing.Point(121, 281);
             this.Panel1Txtb3.Name = "Panel1Txtb3";
             this.Panel1Txtb3.Size = new System.Drawing.Size(317, 22);
@@ -178,6 +224,20 @@
             // 
             // Panel1Txtb2
             // 
+            this.Panel1Txtb2.AutoCompleteCustomSource.AddRange(new string[] {
+            "Marasigan",
+            "Barrientes",
+            "Gitna",
+            "Santos",
+            "Aviador",
+            "Ambot",
+            "Sales",
+            "Hmmm",
+            "Sy",
+            "Alday",
+            "Discaya"});
+            this.Panel1Txtb2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel1Txtb2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel1Txtb2.Location = new System.Drawing.Point(121, 236);
             this.Panel1Txtb2.Name = "Panel1Txtb2";
             this.Panel1Txtb2.Size = new System.Drawing.Size(317, 22);
@@ -185,6 +245,18 @@
             // 
             // Panel1Txtb1
             // 
+            this.Panel1Txtb1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Kathlene",
+            "Robercion",
+            "John Carlo",
+            "Marvin",
+            "Roderick",
+            "Xyra",
+            "Lyka Mae",
+            "Artemis",
+            "Alliana"});
+            this.Panel1Txtb1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel1Txtb1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel1Txtb1.Location = new System.Drawing.Point(121, 191);
             this.Panel1Txtb1.Name = "Panel1Txtb1";
             this.Panel1Txtb1.Size = new System.Drawing.Size(317, 22);
@@ -268,7 +340,7 @@
             // Btn1_P1
             // 
             this.Btn1_P1.ForeColor = System.Drawing.Color.Black;
-            this.Btn1_P1.Location = new System.Drawing.Point(451, 486);
+            this.Btn1_P1.Location = new System.Drawing.Point(459, 472);
             this.Btn1_P1.Name = "Btn1_P1";
             this.Btn1_P1.Size = new System.Drawing.Size(83, 23);
             this.Btn1_P1.TabIndex = 5;
@@ -379,9 +451,38 @@
             this.Health_Info.Controls.Add(this.label7);
             this.Health_Info.Location = new System.Drawing.Point(264, 42);
             this.Health_Info.Name = "Health_Info";
-            this.Health_Info.Size = new System.Drawing.Size(927, 523);
+            this.Health_Info.Size = new System.Drawing.Size(931, 523);
             this.Health_Info.TabIndex = 12;
             this.Health_Info.Paint += new System.Windows.Forms.PaintEventHandler(this.Health_Info_Paint);
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(792, 446);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 68;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // searchBar
+            // 
+            this.searchBar.Location = new System.Drawing.Point(691, 25);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(100, 22);
+            this.searchBar.TabIndex = 67;
+            // 
+            // searchBTN
+            // 
+            this.searchBTN.ForeColor = System.Drawing.Color.Black;
+            this.searchBTN.Location = new System.Drawing.Point(802, 27);
+            this.searchBTN.Name = "searchBTN";
+            this.searchBTN.Size = new System.Drawing.Size(83, 23);
+            this.searchBTN.TabIndex = 66;
+            this.searchBTN.Text = "search";
+            this.searchBTN.UseVisualStyleBackColor = true;
+            this.searchBTN.Click += new System.EventHandler(this.searchBTN_Click);
             // 
             // Records
             // 
@@ -389,13 +490,13 @@
             this.Records.ItemHeight = 16;
             this.Records.Location = new System.Drawing.Point(600, 69);
             this.Records.Name = "Records";
-            this.Records.Size = new System.Drawing.Size(285, 388);
+            this.Records.Size = new System.Drawing.Size(285, 356);
             this.Records.TabIndex = 61;
             // 
             // ViewRecords
             // 
             this.ViewRecords.ForeColor = System.Drawing.Color.Black;
-            this.ViewRecords.Location = new System.Drawing.Point(600, 472);
+            this.ViewRecords.Location = new System.Drawing.Point(600, 446);
             this.ViewRecords.Name = "ViewRecords";
             this.ViewRecords.Size = new System.Drawing.Size(102, 23);
             this.ViewRecords.TabIndex = 60;
@@ -439,7 +540,7 @@
             // ResetBtn
             // 
             this.ResetBtn.ForeColor = System.Drawing.Color.Black;
-            this.ResetBtn.Location = new System.Drawing.Point(358, 486);
+            this.ResetBtn.Location = new System.Drawing.Point(334, 484);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(83, 23);
             this.ResetBtn.TabIndex = 53;
@@ -457,6 +558,10 @@
             // 
             // Panel2Txtb7
             // 
+            this.Panel2Txtb7.AutoCompleteCustomSource.AddRange(new string[] {
+            "1770"});
+            this.Panel2Txtb7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel2Txtb7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel2Txtb7.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel2Txtb7.Location = new System.Drawing.Point(456, 133);
             this.Panel2Txtb7.Name = "Panel2Txtb7";
@@ -473,6 +578,12 @@
             // 
             // Panel2Txtb6
             // 
+            this.Panel2Txtb6.AutoCompleteCustomSource.AddRange(new string[] {
+            "Muntinlupa City",
+            "Caloocan",
+            "Laguna"});
+            this.Panel2Txtb6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel2Txtb6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel2Txtb6.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel2Txtb6.Location = new System.Drawing.Point(276, 134);
             this.Panel2Txtb6.Name = "Panel2Txtb6";
@@ -481,6 +592,11 @@
             // 
             // Panel2Txtb5
             // 
+            this.Panel2Txtb5.AutoCompleteCustomSource.AddRange(new string[] {
+            "Sucat",
+            "Kaliwa"});
+            this.Panel2Txtb5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel2Txtb5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel2Txtb5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel2Txtb5.Location = new System.Drawing.Point(130, 134);
             this.Panel2Txtb5.Name = "Panel2Txtb5";
@@ -489,6 +605,17 @@
             // 
             // Panel2Txtb3
             // 
+            this.Panel2Txtb3.AutoCompleteCustomSource.AddRange(new string[] {
+            "Panuga",
+            "Palmes",
+            "Gordora",
+            "De Guzman",
+            "Jordan",
+            "Marasigan",
+            "Reyles",
+            "Alvarez"});
+            this.Panel2Txtb3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel2Txtb3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel2Txtb3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel2Txtb3.Location = new System.Drawing.Point(298, 79);
             this.Panel2Txtb3.Name = "Panel2Txtb3";
@@ -617,7 +744,7 @@
             // Btn2_P2
             // 
             this.Btn2_P2.ForeColor = System.Drawing.Color.Black;
-            this.Btn2_P2.Location = new System.Drawing.Point(23, 486);
+            this.Btn2_P2.Location = new System.Drawing.Point(28, 484);
             this.Btn2_P2.Name = "Btn2_P2";
             this.Btn2_P2.Size = new System.Drawing.Size(91, 23);
             this.Btn2_P2.TabIndex = 33;
@@ -628,7 +755,7 @@
             // Btn3_P3
             // 
             this.Btn3_P3.ForeColor = System.Drawing.Color.Black;
-            this.Btn3_P3.Location = new System.Drawing.Point(445, 486);
+            this.Btn3_P3.Location = new System.Drawing.Point(427, 484);
             this.Btn3_P3.Name = "Btn3_P3";
             this.Btn3_P3.Size = new System.Drawing.Size(83, 23);
             this.Btn3_P3.TabIndex = 12;
@@ -840,6 +967,18 @@
             // 
             // Panel2Txtb2
             // 
+            this.Panel2Txtb2.AutoCompleteCustomSource.AddRange(new string[] {
+            "Kathlene",
+            "Robercion",
+            "John Carlo",
+            "Marvin",
+            "Roderick",
+            "Xyra",
+            "Lyka Mae",
+            "Artemis",
+            "Alliana"});
+            this.Panel2Txtb2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Panel2Txtb2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Panel2Txtb2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panel2Txtb2.Location = new System.Drawing.Point(130, 79);
             this.Panel2Txtb2.Name = "Panel2Txtb2";
@@ -876,7 +1015,7 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(63, 42);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 523);
+            this.panel2.Size = new System.Drawing.Size(204, 520);
             this.panel2.TabIndex = 13;
             // 
             // button4
@@ -907,40 +1046,11 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // searchBTN
-            // 
-            this.searchBTN.ForeColor = System.Drawing.Color.Black;
-            this.searchBTN.Location = new System.Drawing.Point(802, 27);
-            this.searchBTN.Name = "searchBTN";
-            this.searchBTN.Size = new System.Drawing.Size(83, 23);
-            this.searchBTN.TabIndex = 66;
-            this.searchBTN.Text = "search";
-            this.searchBTN.UseVisualStyleBackColor = true;
-            this.searchBTN.Click += new System.EventHandler(this.searchBTN_Click);
-            // 
-            // searchBar
-            // 
-            this.searchBar.Location = new System.Drawing.Point(691, 25);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(100, 22);
-            this.searchBar.TabIndex = 67;
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(810, 472);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 68;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1358, 648);
+            this.ClientSize = new System.Drawing.Size(1200, 575);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.P_profile);
             this.Controls.Add(this.Health_Info);

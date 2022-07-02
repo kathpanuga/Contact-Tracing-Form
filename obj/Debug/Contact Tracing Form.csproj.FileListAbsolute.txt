@@ -25,3 +25,15 @@ C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.DataRecord.resources
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Data_Recordcs.resources
 C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact_Tracing_Form.Form2.resources
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\obj\Debug\Contact Tracing Form.csproj.CopyComplete
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\AForge.dll
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\AForge.Video.dll
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\zxing.dll
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\zxing.presentation.dll
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\AForge.xml
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\AForge.Video.xml
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\zxing.xml
+C:\Users\Kathlene Panuga\Desktop\Code\Contact Tracing Form\Contact Tracing Form\bin\Debug\zxing.presentation.xml
